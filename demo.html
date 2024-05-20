@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const checkSize = () => {
+        let width = -1;
+        let height = -1;
+      // For the rare legacy browsers that don't support it
+      if (!window.visualViewport) {
+        console.log("")
+        return
+      } else {
+        width = window.visualViewport.width;
+        height = window.visualViewport.height;
+      }
+      document.getElementById("w").innerHTML = width;
+      document.getElementById("h").innerHTML = height;
+    };
+    window.addEventListener('resize', checkSize);
+
+  </script>
+</head>
+<body>
+  <h1>kich thuoc màn hình: 
+    <span id="w">?</span>
+    x
+    <span id="h">?</span>
+  </h1>
+  <script>
+    checkSize();
+  </script>
+</body>
+</html>
