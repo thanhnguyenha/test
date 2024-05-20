@@ -16,8 +16,8 @@
         width = window.visualViewport.width;
         height = window.visualViewport.height;
       }
-      document.getElementById("w").innerHTML = width;
-      document.getElementById("h").innerHTML = height;
+      document.getElementById("w").innerHTML = parseInt(width);
+      document.getElementById("h").innerHTML = parseInt(height);
     };
     window.addEventListener('resize', checkSize);
 
