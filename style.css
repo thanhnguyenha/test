@@ -1,0 +1,78 @@
+td {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.col1 {
+
+}
+
+.col2 {
+
+}
+
+.col3 {
+  width: 70px;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.col4 {
+  
+}
+
+.btn {
+  padding: 4px 8px;
+  margin: 0 4px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #ef3535;
+}
+
+.edit {
+  background-color: #3de5eb;
+}
+
+.line {
+  height: 4px;
+}
+
+#popup {
+  position: fixed;
+  background: #000000b0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#background {
+  background-color: white;
+  padding: 16px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+#input_value {
+  width: 260px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.save {
+  height: 44px;
+  width: 84px;
+  align-self: center;
+}

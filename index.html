@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch giảng</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Lịch giảng dạy</h2>
+  <table>
+    <tr>
+      <td rowspan="2" class="col1">Thứ 2</td>
+      <td class="col2">Sáng</td>
+      <td class="col3" id="a2"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('a2')">Delete</button>
+        <button class="btn edit" onclick="showPopup('a2')">Edit</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="col2">Chiều</td>
+      <td class="col3" id="b2"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('b2')">Delete</button>
+        <button class="btn edit" onclick="showPopup('b2')">Edit</button>
+      </td>
+    </tr>
+    <tr class="line"></tr>
+    <tr>
+      <td rowspan="2" class="col1">Thứ 3</td>
+      <td class="col2">Sáng</td>
+      <td class="col3" id="a3"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('a3')">Delete</button>
+        <button class="btn edit" onclick="showPopup('a3')">Edit</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="col2">Chiều</td>
+      <td class="col3" id="b3"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('b3')">Delete</button>
+        <button class="btn edit" onclick="showPopup('b3')">Edit</button>
+      </td>
+    </tr>
+    <tr class="line"></tr>
+    <tr>
+      <td rowspan="2" class="col1">Thứ 4</td>
+      <td class="col2">Sáng</td>
+      <td class="col3" id="a4"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('a4')">Delete</button>
+        <button class="btn edit" onclick="showPopup('a4')">Edit</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="col2">Chiều</td>
+      <td class="col3" id="b4"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('b4')">Delete</button>
+        <button class="btn edit" onclick="showPopup('b4')">Edit</button>
+      </td>
+    </tr>
+    <tr class="line"></tr>
+    <tr>
+      <td rowspan="2" class="col1">Thứ 5</td>
+      <td class="col2">Sáng</td>
+      <td class="col3" id="a5"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('a5')">Delete</button>
+        <button class="btn edit" onclick="showPopup('a5')">Edit</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="col2">Chiều</td>
+      <td class="col3" id="b5"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('b5')">Delete</button>
+        <button class="btn edit" onclick="showPopup('b5')">Edit</button>
+      </td>
+    </tr>
+    <tr class="line"></tr>
+    <tr>
+      <td rowspan="2" class="col1">Thứ 6</td>
+      <td class="col2">Sáng</td>
+      <td class="col3" id="a6"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('a6')">Delete</button>
+        <button class="btn edit" onclick="showPopup('a6')">Edit</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="col2">Chiều</td>
+      <td class="col3" id="b6"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('b6')">Delete</button>
+        <button class="btn edit" onclick="showPopup('b6')">Edit</button>
+      </td>
+    </tr>
+    <tr class="line"></tr>
+    <tr>
+      <td rowspan="2" class="col1">Thứ 7</td>
+      <td class="col2">Sáng</td>
+      <td class="col3" id="a7"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('a7')">Delete</button>
+        <button class="btn edit" onclick="showPopup('a7')">Edit</button>
+      </td>
+    </tr>
+    <tr>
+      <td class="col2">Chiều</td>
+      <td class="col3" id="b7"> </td>
+      <td  class="col4">
+        <button class="btn delete" onclick="deleteRoom('b7')">Delete</button>
+        <button class="btn edit" onclick="showPopup('b7')">Edit</button>
+      </td>
+    </tr>
+  </table>
+  
+  <div id="popup">
+    <div id="background">
+      <h3>Mời nhập giá trị</h3>
+      <input type="text" id="input_value"/> <br />
+      <button class="btn save" onclick="saveValue()">Lưu</button>
+    </div>
+  </div>
+
+</body>
+</html>
