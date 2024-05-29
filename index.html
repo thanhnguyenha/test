@@ -15,6 +15,7 @@
       <td rowspan="2" class="col1">Thứ 2</td>
       <td class="col2">Sáng</td>
       <td class="col3" id="a2"> </td>
+      <td class="col3b" id="a2class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('a2')">Delete</button>
         <button class="btn edit" onclick="showPopup('a2')">Edit</button>
@@ -23,6 +24,7 @@
     <tr>
       <td class="col2">Chiều</td>
       <td class="col3" id="b2"> </td>
+      <td class="col3b" id="b2class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('b2')">Delete</button>
         <button class="btn edit" onclick="showPopup('b2')">Edit</button>
@@ -33,6 +35,7 @@
       <td rowspan="2" class="col1">Thứ 3</td>
       <td class="col2">Sáng</td>
       <td class="col3" id="a3"> </td>
+      <td class="col3b" id="a3class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('a3')">Delete</button>
         <button class="btn edit" onclick="showPopup('a3')">Edit</button>
@@ -41,6 +44,7 @@
     <tr>
       <td class="col2">Chiều</td>
       <td class="col3" id="b3"> </td>
+      <td class="col3b" id="b3class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('b3')">Delete</button>
         <button class="btn edit" onclick="showPopup('b3')">Edit</button>
@@ -51,6 +55,7 @@
       <td rowspan="2" class="col1">Thứ 4</td>
       <td class="col2">Sáng</td>
       <td class="col3" id="a4"> </td>
+      <td class="col3b" id="a4class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('a4')">Delete</button>
         <button class="btn edit" onclick="showPopup('a4')">Edit</button>
@@ -59,6 +64,7 @@
     <tr>
       <td class="col2">Chiều</td>
       <td class="col3" id="b4"> </td>
+      <td class="col3b" id="b4class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('b4')">Delete</button>
         <button class="btn edit" onclick="showPopup('b4')">Edit</button>
@@ -69,6 +75,7 @@
       <td rowspan="2" class="col1">Thứ 5</td>
       <td class="col2">Sáng</td>
       <td class="col3" id="a5"> </td>
+      <td class="col3b" id="a5class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('a5')">Delete</button>
         <button class="btn edit" onclick="showPopup('a5')">Edit</button>
@@ -77,6 +84,7 @@
     <tr>
       <td class="col2">Chiều</td>
       <td class="col3" id="b5"> </td>
+      <td class="col3b" id="b5class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('b5')">Delete</button>
         <button class="btn edit" onclick="showPopup('b5')">Edit</button>
@@ -87,6 +95,7 @@
       <td rowspan="2" class="col1">Thứ 6</td>
       <td class="col2">Sáng</td>
       <td class="col3" id="a6"> </td>
+      <td class="col3b" id="a6class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('a6')">Delete</button>
         <button class="btn edit" onclick="showPopup('a6')">Edit</button>
@@ -95,6 +104,7 @@
     <tr>
       <td class="col2">Chiều</td>
       <td class="col3" id="b6"> </td>
+      <td class="col3b" id="b6class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('b6')">Delete</button>
         <button class="btn edit" onclick="showPopup('b6')">Edit</button>
@@ -105,6 +115,7 @@
       <td rowspan="2" class="col1">Thứ 7</td>
       <td class="col2">Sáng</td>
       <td class="col3" id="a7"> </td>
+      <td class="col3b" id="a7class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('a7')">Delete</button>
         <button class="btn edit" onclick="showPopup('a7')">Edit</button>
@@ -113,6 +124,7 @@
     <tr>
       <td class="col2">Chiều</td>
       <td class="col3" id="b7"> </td>
+      <td class="col3b" id="b7class"> </td>
       <td  class="col4">
         <button class="btn delete" onclick="deleteRoom('b7')">Delete</button>
         <button class="btn edit" onclick="showPopup('b7')">Edit</button>
@@ -122,11 +134,17 @@
   
   <div id="popup">
     <div id="background">
-      <h3>Mời nhập giá trị</h3>
+      <h3>Mời nhập phòng học</h3>
       <input type="text" id="input_value"/> <br />
+      <h3>Mời nhập tên lớp</h3>
+      <input type="text" id="class_value"/> <br />
       <button class="btn save" onclick="saveValue()">Lưu</button>
     </div>
   </div>
+  <br />
+  <img src="lich.jpg" alt="" />
+  <br />
+  <button onclick="resetData()">Reset</button>
 
 </body>
 </html>
